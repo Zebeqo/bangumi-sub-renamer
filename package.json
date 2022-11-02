@@ -1,6 +1,6 @@
 {
   "name": "bangumi-sub-renamer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A cli tool for renaming subtitles to matching episodes.",
   "author": "Zebeqo @Zebeqo",
   "bin": {
