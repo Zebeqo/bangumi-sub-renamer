@@ -44,27 +44,24 @@
     "bin": "bnm",
     "dirname": "bnm",
     "default": ".",
-    "commands": "./dist/entry",
-    "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-plugins"
-    ]
+    "commands": "./dist/entry"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif readme && git add README.md"
+    "posttest": "pnpm lint",
+    "prepack": "pnpm build && oclif manifest",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\""
   },
   "engines": {
     "node": ">=12.0.0"
   },
   "bugs": "https://github.com/Zebeqo/bangumi-sub-renamer/issues",
   "keywords": [
-    "oclif"
+    "oclif",
+    "subtitle",
+    "cli"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/entry/index.d.ts"
 }
