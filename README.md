@@ -2,8 +2,11 @@
 
 A cli tool for renaming subtitles to matching episodes.
 
+[![asciicast](https://asciinema.org/a/534653.svg)](https://asciinema.org/a/534653)
+
 <!-- toc -->
 
+- [Installation](#installation)
 - [Usage](#usage)
 - [Commands](#commands)
 
